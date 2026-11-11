@@ -1,0 +1,16 @@
+{"timestamp": "2026-11-10T23:46:01.797916+00:00", "event": "tool_call", "actor": "assistant", "tool": "search_school_info", "args": {"query": "exam dates"}, "outcome": "success"}
+{"timestamp": "2026-11-10T23:46:05.353615+00:00", "event": "tool_call", "actor": "assistant", "tool": "calculate_grade", "args": {"scores": [70, 65, 80]}, "outcome": "success"}
+{"timestamp": "2026-11-10T23:46:12.329343+00:00", "event": "tool_call", "actor": "assistant", "tool": "lookup_student_record", "args": {"student_id": "STU001"}, "outcome": "success"}
+{"timestamp": "2026-11-10T23:46:23.830646+00:00", "event": "tool_call", "actor": "assistant", "tool": "prepare_grade_change", "args": {"new_score": 70, "reason": "Script was remarked after an appeal", "student_id": "STU002", "subject": "Mathematics"}, "outcome": "success"}
+{"timestamp": "2026-11-10T23:46:32.858828+00:00", "event": "tool_call", "actor": "assistant", "tool": "lookup_student_record", "args": {"student_id": "STU002"}, "outcome": "success"}
+{"timestamp": "2026-11-10T23:48:47.248915+00:00", "event": "tool_call", "actor": "assistant", "tool": "prepare_grade_change", "args": {"reason": "The script was remarked after an appeal", "subject": "Mathematics", "student_id": "STU002", "new_score": 150}, "outcome": "invalid_arguments"}
+{"timestamp": "2026-11-10T23:48:58.924917+00:00", "event": "tool_call", "actor": "assistant", "tool": "lookup_student_record", "args": {"student_id": "STU999"}, "outcome": "student_not_found"}
+{"timestamp": "2026-11-10T23:49:06.533433+00:00", "event": "approval_decision", "actor": "Mrs Ade", "tool": "grade_change", "args": {"request_id": "REQ001", "decision": "approve"}, "outcome": "approved_executed"}
+{"timestamp": "2026-11-10T23:49:06.800053+00:00", "event": "tool_call", "actor": "assistant", "tool": "lookup_student_record", "args": {"student_id": "STU002"}, "outcome": "success"}
+{"timestamp": "2026-11-10T23:49:13.462523+00:00", "event": "tool_call", "actor": "assistant", "tool": "prepare_grade_change", "args": {"new_score": 90, "student_id": "STU003", "subject": "English", "reason": "Marking error found during review"}, "outcome": "success"}
+{"timestamp": "2026-11-10T23:49:35.671841+00:00", "event": "approval_decision", "actor": "Mrs Ade", "tool": "grade_change", "args": {"request_id": "REQ002", "decision": "reject"}, "outcome": "rejected_no_action"}
+{"timestamp": "2026-11-10T23:49:36.058692+00:00", "event": "tool_call", "actor": "assistant", "tool": "lookup_student_record", "args": {"student_id": "STU003"}, "outcome": "success"}
+{"timestamp": "2026-11-10T23:49:40.497755+00:00", "event": "llm_error", "actor": "assistant", "tool": "gemini", "args": {}, "outcome": "ServerError"}
+{"timestamp": "2026-11-10T23:49:40.843321+00:00", "event": "tool_call", "actor": "assistant", "tool": "lookup_student_record", "args": {"student_id": "STU004"}, "outcome": "success"}
+{"timestamp": "2026-11-10T23:49:42.853586+00:00", "event": "tool_call", "actor": "assistant", "tool": "search_school_info", "args": {"query": "notice parents school closed"}, "outcome": "success"}
+{"timestamp": "2026-11-10T23:50:40.733586+00:00", "event": "tool_call", "actor": "assistant", "tool": "lookup_student_record", "args": {"student_id": "STU004"}, "outcome": "success"}
